@@ -1,0 +1,190 @@
+<div class="tab-pane fade" id="tab-product-best-sellers">
+    <div class="row">
+        @foreach($posts->$mdf as $mdf)
+        <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6 mb-6" data-aos="fade-up" data-aos-delay="200">
+            <!-- Single Prodect -->
+            <div class="product">
+                <div class="thumb">
+                    <a href="shop-left-sidebar.html" class="image">
+                        <img src="{{$mdf['image']}}" alt="Product" />
+                        <img class="hover-image" src="{{$mdf['image']}}" alt="Product" />
+                    </a>
+                    <span class="badges">
+                        <span class="new">New</span>
+                    </span>
+                    <div class="actions">
+                        <a href="wishlist.html" class="action wishlist" title="Wishlist"><i
+                                class="icon-heart"></i></a>
+                        <a href="#" class="action quickview" data-link-action="quickview" title="Quick view" data-bs-toggle="modal" data-bs-target="#exampleModal"><i
+                                class="icon-size-fullscreen"></i></a>
+                        <a href="compare.html" class="action compare" title="Compare"><i
+                                class="icon-refresh"></i></a>
+                    </div>
+                    <button title="Add To Cart" class=" add-to-cart">Add
+                        To Cart</button>
+                </div>
+                <div class="content">
+                    <h5 class="title"><a href="products/{{$mdf['id']}}" method="GET">{{$mdf['decor']}}</a></h5>
+                    <span class="price">
+                        <span class="new">Цена : {{$mdf['price']}}</span>
+                    </span>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</div>
+<!-- 2nd tab end -->
+<!-- 3rd tab start -->
+                    <div class="tab-pane fade" id="tab-product-sale-item">
+                        <div class="row">
+                            @foreach($pvh as $pvh)
+                            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6 mb-6" data-aos="fade-up" data-aos-delay="200">
+                                <!-- Single Prodect -->
+                                <div class="product">
+                                    <div class="thumb">
+                                        <a href="shop-left-sidebar.html" class="image">
+                                            <img src="{{$pvh['image']}}" alt="Product" />
+                                            <img class="hover-image" src="{{$pvh['image']}}" alt="Product" />
+                                        </a>
+                                        <span class="badges">
+                                            <span class="new">New</span>
+                                        </span>
+                                        <div class="actions">
+                                            <a href="wishlist.html" class="action wishlist" title="Wishlist"><i
+                                                    class="icon-heart"></i></a>
+                                            <a href="#" class="action quickview" data-link-action="quickview" title="Quick view" data-bs-toggle="modal" data-bs-target="#exampleModal"><i
+                                                    class="icon-size-fullscreen"></i></a>
+                                            <a href="compare.html" class="action compare" title="Compare"><i
+                                                    class="icon-refresh"></i></a>
+                                        </div>
+                                        <button title="Add To Cart" class=" add-to-cart">Add
+                                            To Cart</button>
+                                    </div>
+                                    <div class="content">
+                                        <h5 class="title"><a href="products/{{$pvh['id']}}" method="GET">{{$pvh['decor']}}</a></h5>
+                                        <span class="price">
+                                            <span class="new">Цена : {{$pvh['price']}}</span>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+<!-- 3rd tab end -->
+<!-- 4th tab start -->
+<div class="tab-pane fade" id="tab-product-stol">
+    <div class="row">
+        @foreach($stol as $stol)
+        <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6 mb-6" data-aos="fade-up" data-aos-delay="200">
+            <!-- Single Prodect -->
+            <div class="product">
+                <div class="thumb">
+                    <a href="shop-left-sidebar.html" class="image">
+                        <img src="{{$stol['image']}}" alt="Product" />
+                        <img class="hover-image" src="{{$stol['image']}}" alt="Product" />
+                    </a>
+                    <span class="badges">
+                        <span class="new">New</span>
+                    </span>
+                    <div class="actions">
+                        <a href="wishlist.html" class="action wishlist" title="Wishlist"><i
+                                class="icon-heart"></i></a>
+                        <a href="#" class="action quickview" data-link-action="quickview" title="Quick view" data-bs-toggle="modal" data-bs-target="#exampleModal"><i
+                                class="icon-size-fullscreen"></i></a>
+                        <a href="compare.html" class="action compare" title="Compare"><i
+                                class="icon-refresh"></i></a>
+                    </div>
+                    <button title="Add To Cart" class=" add-to-cart">Add
+                        To Cart</button>
+                </div>
+                <div class="content">
+                    <h5 class="title"><a href="products/{{$stol['id']}}" method="GET">{{$stol['decor']}}</a></h5>
+                    <span class="price">
+                        <span class="new">Цена : {{$stol['price']}}</span>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- 4th tab end -->
+<!-- 5th tab start -->
+<div class="tab-pane fade" id="tab-product-fartuc">
+    <div class="row">
+        @foreach($fartuc as $fartuc)
+        <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6 mb-6" data-aos="fade-up" data-aos-delay="200">
+            <!-- Single Prodect -->
+            <div class="product">
+                <div class="thumb">
+                    <a href="shop-left-sidebar.html" class="image">
+                        <img src="{{$fartuc['image']}}" alt="Product" />
+                        <img class="hover-image" src="{{$fartuc['image']}}" alt="Product" />
+                    </a>
+                    <span class="badges">
+                        <span class="new">New</span>
+                    </span>
+                    <div class="actions">
+                        <a href="wishlist.html" class="action wishlist" title="Wishlist"><i
+                                class="icon-heart"></i></a>
+                        <a href="#" class="action quickview" data-link-action="quickview" title="Quick view" data-bs-toggle="modal" data-bs-target="#exampleModal"><i
+                                class="icon-size-fullscreen"></i></a>
+                        <a href="compare.html" class="action compare" title="Compare"><i
+                                class="icon-refresh"></i></a>
+                    </div>
+                    <button title="Add To Cart" class=" add-to-cart">Add
+                        To Cart</button>
+                </div>
+                <div class="content">
+                    <h5 class="title"><a href="products/{{$fartuc['id']}}" method="GET">{{$fartuc['decor']}}</a></h5>
+                    <span class="price">
+                        <span class="new">Цена : {{$fartuc['price']}}</span>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- 5th tab end -->
+<!-- 6th tab start -->
+<div class="tab-pane fade" id="tab-product-furn">
+    <div class="row">
+        @foreach($furniture as $furniture)
+        <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6 mb-6" data-aos="fade-up" data-aos-delay="200">
+            <!-- Single Prodect -->
+            <div class="product">
+                <div class="thumb">
+                    <a href="shop-left-sidebar.html" class="image">
+                        <img src="{{$furniture['image']}}" alt="Product" />
+                        <img class="hover-image" src="{{$furniture['image']}}" alt="Product" />
+                    </a>
+                    <span class="badges">
+                        <span class="new">New</span>
+                    </span>
+                    <div class="actions">
+                        <a href="wishlist.html" class="action wishlist" title="Wishlist"><i
+                                class="icon-heart"></i></a>
+                        <a href="#" class="action quickview" data-link-action="quickview" title="Quick view" data-bs-toggle="modal" data-bs-target="#exampleModal"><i
+                                class="icon-size-fullscreen"></i></a>
+                        <a href="compare.html" class="action compare" title="Compare"><i
+                                class="icon-refresh"></i></a>
+                    </div>
+                    <button title="Add To Cart" class=" add-to-cart">Add
+                        To Cart</button>
+                </div>
+                <div class="content">
+                    <h5 class="title"><a href="products/{{$furniture['id']}}" method="GET">{{$furniture['decor']}}</a></h5>
+                    <span class="price">
+                        <span class="new">Цена : {{$furniture['price']}}</span>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+                            @endforeach
+                            @endforeach
+                            @endforeach
+                            @endforeach
+                            @endforeach
+                            @endforeach
+</div>
